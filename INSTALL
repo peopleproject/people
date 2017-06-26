@@ -1,0 +1,9 @@
+Building PeopleCoin
+
+See doc/readme-qt.rst for instructions on building PeopleCoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of PeopleCoin.
+
+See doc/build-*.txt for instructions on building peopled,
+the intended-for-services, no-graphical-interface, reference
+implementation of PeopleCoin.

@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+
+OTOOL=${HOST}-otool INSTALLNAMETOOL=${HOST}-install_name_tool STRIP=${HOST}-strip contrib/macdeploy/macdeployqtplus Hpeople.app
+mkdir -p dist/.background
+install contrib/macdeploy/background.png dist/.background
+install contrib/macdeploy/DS_Store dist/.DS_Store
+install src/qt/res/icons/people.icns dist/.VolumeIcon.icns
+cd dist
+ln -sf /Applications Applications
+cd ..
+genisoimage -no-cache-inodes -l -probe -V "Hpeople" -no-pad -r -apple -o hpeople.tmp.dmg dist
+dmg dmg hpeople.tmp.dmg hpeople.macosx.dmg

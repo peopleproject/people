@@ -107,7 +107,7 @@ static void convertSeeds(std::vector<CAddress> &vSeedsOut, const unsigned int *d
 class CBaseChainParams : public CChainParams {
 public:
     CBaseChainParams() {
-        const char* pszTimestamp = "-------";
+        const char* pszTimestamp = "The global ransomware epidemic is just getting started";
         CTransaction txNew;
         txNew.nTime = GENESIS_BLOCK_TIME;
         txNew.vin.resize(1);
@@ -139,33 +139,35 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0xfa;
-        pchMessageStart[1] = 0xf2;
-        pchMessageStart[2] = 0xef;
+        //0x4D 0x41 0x4E
+        pchMessageStart[0] = 0x4D;
+        pchMessageStart[1] = 0x45;
+        pchMessageStart[2] = 0x4E;
         pchMessageStart[3] = 0xb4;
 
-        vAlertPubKey = ParseHex("031d5def92b2d59943e57aaa8b1adbb110ff215fc4ebdc6fb5c9a797e2b1dea527");
+
+        vAlertPubKey = ParseHex("043def7920577d3ad58efefcaa160ac70a4173ddc3d17505253a5214d6aedc77f5c3595ab3e5865eaaab9a10c9a3487cf8ff21430d71457292ca1271951833eb77");
 
         nDefaultPort = 7721;
         nRPCPort = 7701;
         nBIP44ID = 0x80000023;
 
-        nLastPOWBlock = 31000;// !!!!!
-        nLastFairLaunchBlock = 120;// !!!!!
+        nLastPOWBlock = 100000;// !!!!!
+        nLastFairLaunchBlock = 111111111111111;// !!!!!
 
-        nFirstPosv2Block = 453000;// !!!!!
-        nFirstPosv3Block = 783000;// !!!!!
+        nFirstPosv2Block = 1;// !!!!!
+        nFirstPosv3Block = 100000;// !!!!!
 
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20); // "standard" scrypt target limit for proof of work, results with 0,000244140625 proof-of-work difficulty
         bnProofOfStakeLimit = CBigNum(~uint256(0) >> 20);
         bnProofOfStakeLimitV2 = CBigNum(~uint256(0) >> 48);
 
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce   = 261836;
+        genesis.nNonce   = 520219;
         hashGenesisBlock = genesis.GetHash();
 
-        assert(hashGenesisBlock == uint256("0x00000eca234f07edc98aaf3f2a7b7478dc58992a9cd439323d099c6a590ca2bb"));
-        assert(genesis.hashMerkleRoot == uint256("0x26a3ff5d3dc46b091e7b58b6022982e6d27dff1bab3bd1da6beb4790983c87c4"));
+        assert(hashGenesisBlock == uint256("0x9cc2acb57f3cd418df59941ef97d5d84627867b9368ceb7294e6845ec1351128"));
+        assert(genesis.hashMerkleRoot == uint256("0xacb5a623f6d6e6418f7a19d84be016879312cd327069a85932a2ad1ab96adeb5"));
 
         base58Prefixes[PUBKEY_ADDRESS]      = list_of(63).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[SCRIPT_ADDRESS]      = list_of(125).convert_to_container<std::vector<unsigned char> >();
@@ -204,7 +206,7 @@ public:
         pchMessageStart[2] = 0x05;
         pchMessageStart[3] = 0x0b;
 
-        vAlertPubKey = ParseHex("0373d8dce43eb98374bcfff2352cd559e6774fd6a87eef73b2fbdb39b2b0bc0082");
+        vAlertPubKey = ParseHex("043def7920577d3ad58efefcaa160ac70a4173ddc3d17505253a5214d6aedc77f5c3595ab3e5865eaaab9a10c9a3487cf8ff21430d71457292ca1271951833eb77");
 
         nDefaultPort = 17721;
         nRPCPort = 17701;
@@ -221,9 +223,9 @@ public:
         bnProofOfStakeLimitV2 = CBigNum(~uint256(0) >> 16);
 
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 55887;
+        genesis.nNonce = 512560;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000910a87c1385247edc82808ec498a2d738fea5f0d3f8801512d6b84ad6f72"));
+        assert(hashGenesisBlock == uint256("0xb13257ecdba3267cf96ba1d022689b445632fa7ac4da220cdd63655db6bd9ecf"));
 
         base58Prefixes[PUBKEY_ADDRESS]      = list_of(127).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[SCRIPT_ADDRESS]      = list_of(196).convert_to_container<std::vector<unsigned char> >();
@@ -261,13 +263,13 @@ public:
         pchMessageStart[2] = 0xb5;
         pchMessageStart[3] = 0xda;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
-        genesis.nTime = 1411111111;
+        genesis.nTime = 1498736402;
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
         genesis.nNonce = 2;
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 18701;
 
-        assert(hashGenesisBlock == uint256("0xb86b5854a5a77e1eb0a6023b7d6013ebc9840bd87aad7d9e56da458f87015d3f"));
+        assert(hashGenesisBlock == uint256("0x1557300675c20191045e31c835c496d1c36ff6aefbae1ba2fc8eb6df578ba42b"));
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
     }

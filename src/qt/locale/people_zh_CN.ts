@@ -3,12 +3,12 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About PeopleCoin</source>
+        <source>About People</source>
         <translation>关于People Cash</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;PeopleCoin&lt;/b&gt; version</source>
+        <source>&lt;b&gt;People&lt;/b&gt; version</source>
         <translation>&lt;b&gt;暗影币客户端&lt;/b&gt; 版本</translation>
     </message>
     <message>
@@ -16,14 +16,14 @@
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The BlackCoin developers
-Copyright © 2014-%1 The PeopleCoin developers</source>
+Copyright © 2014-%1 The People developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The BlackCoin developers
-Copyright © 2014-[CLIENT_LAST_COPYRIGHT] The PeopleCoin developers</source>
+Copyright © 2014-[CLIENT_LAST_COPYRIGHT] The People developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -187,7 +187,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-59"/>
-        <source>PeopleCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>People will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>People Cash客户端即将关闭以完成加密过程。请记住，加密钱包并不能完全防止您的电子货币被入侵您计算机的木马软件盗窃。</translation>
     </message>
     <message>
@@ -563,7 +563,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid PeopleCoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid People address.</source>
         <translation>&quot;%1&quot; 不是有效的People Cash地址。</translation>
     </message>
     <message>
@@ -1899,7 +1899,7 @@ Ring size of one is not anonymous, and harms the network.</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>0 active connections to PeopleCoin network</source>
+        <source>0 active connections to People network</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2601,12 +2601,12 @@ Ring size of one is not anonymous, and harms the network.</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;About PeopleCoin</source>
+        <source>&amp;About People</source>
         <translation>关于People Cash(&amp;A)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about PeopleCoin</source>
+        <source>Show information about People</source>
         <translation>显示关于People Cash的信息</translation>
     </message>
     <message>
@@ -2626,7 +2626,7 @@ Ring size of one is not anonymous, and harms the network.</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Modify configuration options for PeopleCoin</source>
+        <source>Modify configuration options for People</source>
         <translation>更改People Cash设置选项</translation>
     </message>
     <message>
@@ -2728,7 +2728,7 @@ Ring size of one is not anonymous, and harms the network.</source>
     </message>
     <message numerus="yes">
         <location line="+63"/>
-        <source>%n active connection(s) to PeopleCoin network</source>
+        <source>%n active connection(s) to People network</source>
         <translation><numerusform>%n个活动连接在影子网络传递数据</numerusform></translation>
     </message>
     <message>
@@ -2887,7 +2887,7 @@ Message: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid PeopleCoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid People address or malformed URI parameters.</source>
         <translation>无法解析URI：无效的People Cash地址或错误的URI参数。</translation>
     </message>
     <message>
@@ -3383,7 +3383,7 @@ Expected time to earn reward is %3</source>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>PeopleCoin version</source>
+        <source>People version</source>
         <translation>People Cash客户端版本</translation>
     </message>
     <message>
@@ -3576,7 +3576,7 @@ Expected time to earn reward is %3</source>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong PeopleCoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong People will not work properly.</source>
         <translation>警告：请确认您计算机的本地时间。如果时钟错误，暗影币客户端将不能正常工作。</translation>
     </message>
     <message>
@@ -3772,7 +3772,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;People Alert&quot; admin@foo.com
 </source>
         <translation>%s, 必须在配置文件里设置rpc密码:
  %s
@@ -3783,7 +3783,7 @@ rpcpassword=%s
 用户名和密码不能重复。
 如果该文件不存在，请自行创建并设为用户本身只读权限。
 建议创建提示以监测可能的问题，如：
-alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@foo.com
+alertnotify=echo %%s | mail -s &quot;People Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3912,12 +3912,12 @@ alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  PeopleCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s.  People is probably already running.</source>
         <translation>无法从数据目录 %s 获得锁定.  暗影币客户端可能已在运行中.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>PeopleCoin</source>
+        <source>People</source>
         <translation>People Cash</translation>
     </message>
     <message>
@@ -3952,12 +3952,12 @@ alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of PeopleCoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of People</source>
         <translation>wallet.dat 钱包文件加载出错：需要新版本的客户端</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart PeopleCoin to complete</source>
+        <source>Wallet needed to be rewritten: restart People to complete</source>
         <translation>需要重写钱包，重启客户端以完成该操作。</translation>
     </message>
     <message>
@@ -4027,7 +4027,7 @@ alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. PeopleCoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. People is probably already running.</source>
         <translation>无法绑定到该计算机上的 %s. People Cash客户端可能已在运行中。</translation>
     </message>
     <message>

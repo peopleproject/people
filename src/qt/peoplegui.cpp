@@ -1,4 +1,4 @@
-// Copyright (c) 2014 The PeopleCoin developers
+// Copyright (c) 2014 The People developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file license.txt or http://www.opensource.org/licenses/mit-license.php.
 
@@ -180,14 +180,14 @@ void PeopleGUI::createActions()
     quitAction->setToolTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
-    aboutAction = new QAction(QIcon(":/icons/people"), tr("&About PeopleCoin"), this);
-    aboutAction->setToolTip(tr("Show information about PeopleCoin"));
+    aboutAction = new QAction(QIcon(":/icons/people"), tr("&About People"), this);
+    aboutAction->setToolTip(tr("Show information about People"));
     aboutAction->setMenuRole(QAction::AboutRole);
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
     aboutQtAction->setToolTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
-    optionsAction->setToolTip(tr("Modify configuration options for PeopleCoin"));
+    optionsAction->setToolTip(tr("Modify configuration options for People"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
     toggleHideAction = new QAction(QIcon(":/icons/people"), tr("&Show / Hide"), this);
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
@@ -416,7 +416,7 @@ void PeopleGUI::setNumConnections(int count)
 
     connectionsIcon.setAttribute("class", className);
     connectionsIcon.setAttribute("src", "qrc:///icons/" + className.replace("-", "_"));
-    connectionsIcon.setAttribute("data-title", tr("%n active connection(s) to PeopleCoin network", "", count));
+    connectionsIcon.setAttribute("data-title", tr("%n active connection(s) to People network", "", count));
 }
 
 void PeopleGUI::setNumBlocks(int count, int nTotalBlocks)
@@ -727,7 +727,7 @@ void PeopleGUI::dropEvent(QDropEvent *event)
         if (nValidUrisFound)
             bridge->triggerElement("#navitems a[href=#send]", "click");
         else
-            notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid PeopleCoin address or malformed URI parameters."));
+            notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid People address or malformed URI parameters."));
     }
 
     event->acceptProposedAction();
@@ -750,7 +750,7 @@ void PeopleGUI::handleURI(QString strURI)
         showNormalIfMinimized();
     }
     else
-        notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid PeopleCoin address or malformed URI parameters."));
+        notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid People address or malformed URI parameters."));
 }
 
 void PeopleGUI::setEncryptionStatus(int status)

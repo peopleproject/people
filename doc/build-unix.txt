@@ -16,7 +16,7 @@ To Build
 cd src/
 make -f makefile.unix            # Headless people
 
-See readme-qt.rst for instructions on building PeopleCoin QT,
+See readme-qt.rst for instructions on building People QT,
 the graphical people.
 
 Dependencies

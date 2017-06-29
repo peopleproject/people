@@ -3,27 +3,27 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About PeopleCoin</source>
+        <source>About People</source>
         <translation>Over People</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;PeopleCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;PeopleCoin&lt;/b&gt; versie</translation>
+        <source>&lt;b&gt;People&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;People&lt;/b&gt; versie</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The BlackCoin developers
-Copyright © 2014-%1 The PeopleCoin developers</source>
+Copyright © 2014-%1 The People developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The BlackCoin developers
-Copyright © 2014-[CLIENT_LAST_COPYRIGHT] The PeopleCoin developers</source>
+Copyright © 2014-[CLIENT_LAST_COPYRIGHT] The People developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -187,8 +187,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-59"/>
-        <source>PeopleCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>PeopleCoin zal nu sluiten om het versleutel proces te voltooien. Onthou dat het versleutelen van je portemonnee je niet volledig beschermt tegen diefstal van munten door malware op je computer.</translation>
+        <source>People will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>People zal nu sluiten om het versleutel proces te voltooien. Onthou dat het versleutelen van je portemonnee je niet volledig beschermt tegen diefstal van munten door malware op je computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -570,8 +570,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid PeopleCoin address.</source>
-        <translation>Het ingevoerde adres &quot;%1&quot; is geen geldig PeopleCoin adres.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid People address.</source>
+        <translation>Het ingevoerde adres &quot;%1&quot; is geen geldig People adres.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1168,7 +1168,7 @@ Kring grootte van één is niet geheim en tast het netwerk aan.</translation>
     <message>
         <location line="-95"/>
         <source>The change address is not valid, please recheck.</source>
-        <translation>Het ingevoerde adres &quot;%1&quot; is geen geldig PeopleCoin adres.</translation>
+        <translation>Het ingevoerde adres &quot;%1&quot; is geen geldig People adres.</translation>
     </message>
     <message>
         <location line="+25"/>
@@ -1906,8 +1906,8 @@ Kring grootte van één is niet geheim en tast het netwerk aan.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>0 active connections to PeopleCoin network</source>
-        <translation>0 actieve connecties tot het PeopleCoin netwerk</translation>
+        <source>0 active connections to People network</source>
+        <translation>0 actieve connecties tot het People netwerk</translation>
     </message>
     <message>
         <location line="+26"/>
@@ -2610,13 +2610,13 @@ Vergeet niet om je Portemonnee Herstel Zin en Paswoord (al dan niet ingesteld) o
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;About PeopleCoin</source>
-        <translation>&amp;Over PeopleCoin</translation>
+        <source>&amp;About People</source>
+        <translation>&amp;Over People</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about PeopleCoin</source>
-        <translation>Toon informatie over PeopleCoin</translation>
+        <source>Show information about People</source>
+        <translation>Toon informatie over People</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2635,8 +2635,8 @@ Vergeet niet om je Portemonnee Herstel Zin en Paswoord (al dan niet ingesteld) o
     </message>
     <message>
         <location line="+1"/>
-        <source>Modify configuration options for PeopleCoin</source>
-        <translation>Verander configuratie opties voor PeopleCoin</translation>
+        <source>Modify configuration options for People</source>
+        <translation>Verander configuratie opties voor People</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2737,7 +2737,7 @@ Vergeet niet om je Portemonnee Herstel Zin en Paswoord (al dan niet ingesteld) o
     </message>
     <message numerus="yes">
         <location line="+63"/>
-        <source>%n active connection(s) to PeopleCoin network</source>
+        <source>%n active connection(s) to People network</source>
         <translation><numerusform>%n actieve verbindingen met People netwerk</numerusform><numerusform>%n actieve verbindingen met People netwerk</numerusform></translation>
     </message>
     <message>
@@ -2905,8 +2905,8 @@ Bericht: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid PeopleCoin address or malformed URI parameters.</source>
-        <translation>URI kan niet ontleedt worden! Mogelijke oorzaken zijn een ongeldig PeopleCoin adres of incorrecte URI parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid People address or malformed URI parameters.</source>
+        <translation>URI kan niet ontleedt worden! Mogelijke oorzaken zijn een ongeldig People adres of incorrecte URI parameters.</translation>
     </message>
     <message>
         <location line="+42"/>
@@ -3401,8 +3401,8 @@ Verwachten tijd tot beloning is %3</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>PeopleCoin version</source>
-        <translation>PeopleCoin versie</translation>
+        <source>People version</source>
+        <translation>People versie</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3586,8 +3586,8 @@ Verwachten tijd tot beloning is %3</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong PeopleCoin will not work properly.</source>
-        <translation>Waarschuwing: Controleer of de datum en tijd van de computer juist zijn! Als uw klok verkeerd is PeopleCoin zal niet goed werken.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong People will not work properly.</source>
+        <translation>Waarschuwing: Controleer of de datum en tijd van de computer juist zijn! Als uw klok verkeerd is People zal niet goed werken.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -3782,7 +3782,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;People Alert&quot; admin@foo.com
 </source>
         <translation>%s, u moet een rpcpassword instellen in het configuratiebestand: 
 %s 
@@ -3793,7 +3793,7 @@ rpcpassword = %s
 De gebruikersnaam en het wachtwoord MAG NIET hetzelfde zijn. 
 Als het bestand niet bestaat, maakt u met leesbare-alleen-eigenaar bestandsbeheermachtigingen.  
 Het wordt ook aanbevolen om alertnotify instellen zodat u een melding van problemen;  
-bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@foo.com </translation>
+bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;People Alert&quot; admin@foo.com </translation>
     </message>
     <message>
         <location line="+51"/>
@@ -3917,13 +3917,13 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;PeopleCoin Alert&quot; admi
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  PeopleCoin is probably already running.</source>
-        <translation>Kan een slot op data directory %s niet verkrijgen. PeopleCoin wordt waarschijnlijk al uitgevoerd.</translation>
+        <source>Cannot obtain a lock on data directory %s.  People is probably already running.</source>
+        <translation>Kan een slot op data directory %s niet verkrijgen. People wordt waarschijnlijk al uitgevoerd.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>PeopleCoin</source>
-        <translation>PeopleCoin</translation>
+        <source>People</source>
+        <translation>People</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3957,13 +3957,13 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;PeopleCoin Alert&quot; admi
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of PeopleCoin</source>
-        <translation>Fout bij laden van wallet.dat: Portemonnee vereist een nieuwere versie van PeopleCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of People</source>
+        <translation>Fout bij laden van wallet.dat: Portemonnee vereist een nieuwere versie van People</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart PeopleCoin to complete</source>
-        <translation>Portemonnee moet herschreven worden: herstart PeopleCoin om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart People to complete</source>
+        <translation>Portemonnee moet herschreven worden: herstart People om te voltooien</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4032,8 +4032,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s &quot;PeopleCoin Alert&quot; admi
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. PeopleCoin is probably already running.</source>
-        <translation>Niet mogelijk om %s op deze computer. PeopleCoin is waarschijnlijk al geopened.</translation>
+        <source>Unable to bind to %s on this computer. People is probably already running.</source>
+        <translation>Niet mogelijk om %s op deze computer. People is waarschijnlijk al geopened.</translation>
     </message>
     <message>
         <location line="-97"/>

@@ -1039,15 +1039,15 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\PeopleCoin
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\PeopleCoin
-    // Mac: ~/Library/Application Support/PeopleCoin
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\People
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\People
+    // Mac: ~/Library/Application Support/People
     // Unix: ~/.people
     
     
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "PeopleCoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "People";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1059,7 +1059,7 @@ boost::filesystem::path GetDefaultDataDir()
         // Mac
         pathRet /= "Library/Application Support";
         fs::create_directory(pathRet);
-        return pathRet / "PeopleCoin";
+        return pathRet / "People";
     #else
         // Unix
         return pathRet / ".people";
@@ -1338,10 +1338,10 @@ void AddTimeData(const CNetAddr& ip, int64_t nTime)
                 if (!fMatch)
                 {
                     fDone = true;
-                    string strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong PeopleCoin will not work properly.");
+                    string strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong People will not work properly.");
                     strMiscWarning = strMessage;
                     LogPrintf("*** %s\n", strMessage.c_str());
-                    uiInterface.ThreadSafeMessageBox(strMessage+" ", string("PeopleCoin"), CClientUIInterface::BTN_OK | CClientUIInterface::ICON_WARNING);
+                    uiInterface.ThreadSafeMessageBox(strMessage+" ", string("People"), CClientUIInterface::BTN_OK | CClientUIInterface::ICON_WARNING);
                 }
             }
         }

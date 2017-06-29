@@ -454,7 +454,7 @@ WalletModel::SendCoinsReturn WalletModel::sendCoinsAnon(const QList<SendCoinsRec
         return SendCoinsReturn(SCR_ErrorWithMsg, 0, QString::fromStdString("Block chain must be fully synced first."));
 
     if (vNodes.empty())
-        return SendCoinsReturn(SCR_ErrorWithMsg, 0, QString::fromStdString("PeopleCoin is not connected!"));
+        return SendCoinsReturn(SCR_ErrorWithMsg, 0, QString::fromStdString("People is not connected!"));
 
 
     // -- verify input type and ringsize

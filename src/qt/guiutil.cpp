@@ -375,7 +375,7 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "PeopleCoin.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "People.lnk";
 }
 
 bool GetStartOnSystemStartup()
@@ -499,7 +499,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         optionFile << "[Desktop Entry]\n" \
                    << "Version=" << FormatFullVersion() << "\n" \
                    << "Type=Application\n" \
-                   << "Name=PeopleCoin\n" \
+                   << "Name=People\n" \
                    << "Exec=" << pszExePath << "%u -min\n" \
                    << "Icon=" <<  QFileInfo(":/icons/people").absoluteFilePath().toStdString() << "\n" \
                    << "Terminal=false\n" \

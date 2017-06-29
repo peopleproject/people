@@ -165,13 +165,13 @@ void HandleSIGHUP(int)
 
 bool static InitError(const std::string &str)
 {
-    uiInterface.ThreadSafeMessageBox(str, _("PeopleCoin"), CClientUIInterface::BTN_OK | CClientUIInterface::MODAL);
+    uiInterface.ThreadSafeMessageBox(str, _("People"), CClientUIInterface::BTN_OK | CClientUIInterface::MODAL);
     return false;
 }
 
 bool static InitWarning(const std::string &str)
 {
-    uiInterface.ThreadSafeMessageBox(str, _("PeopleCoin"), CClientUIInterface::BTN_OK | CClientUIInterface::ICON_WARNING | CClientUIInterface::MODAL);
+    uiInterface.ThreadSafeMessageBox(str, _("People"), CClientUIInterface::BTN_OK | CClientUIInterface::ICON_WARNING | CClientUIInterface::MODAL);
     return true;
 }
 
@@ -550,7 +550,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     // ********************************************************* Step 4: application initialization: dir lock, daemonize, pidfile, debug log
     // Sanity check
     if (!InitSanityCheck())
-        return InitError(_("Initialization sanity check failed. PeopleCoin is shutting down."));
+        return InitError(_("Initialization sanity check failed. People is shutting down."));
 
     
     std::string strDataDir = GetDataDir().string();
@@ -568,13 +568,13 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     static boost::interprocess::file_lock lock(pathLockFile.string().c_str());
     if (!lock.try_lock())
-        return InitError(strprintf(_("Cannot obtain a lock on data directory %s.  PeopleCoin is probably already running."), strDataDir.c_str()));
+        return InitError(strprintf(_("Cannot obtain a lock on data directory %s.  People is probably already running."), strDataDir.c_str()));
     
     if (GetBoolArg("-shrinkdebugfile", !fDebug))
         ShrinkDebugFile();
 
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("PeopleCoin version %s (%s)\n", FormatFullVersion().c_str(), CLIENT_DATE.c_str());
+    LogPrintf("People version %s (%s)\n", FormatFullVersion().c_str(), CLIENT_DATE.c_str());
     LogPrintf("Operating in %s mode.\n", GetNodeModeName(nNodeMode));
     LogPrintf("Using OpenSSL version %s\n", SSLeay_version(SSLEAY_VERSION));
 
@@ -588,7 +588,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     if (fDaemon)
     {
-        fprintf(stdout, "PeopleCoin server starting\n");
+        fprintf(stdout, "People server starting\n");
         fflush(stdout);
     };
     
@@ -691,7 +691,7 @@ bool AppInit2(boost::thread_group& threadGroup)
                 " Original wallet.dat saved as wallet.{timestamp}.bak in %s; if"
                 " your balance or transactions are incorrect you should"
                 " restore from a backup."), strDataDir.c_str());
-            uiInterface.ThreadSafeMessageBox(msg, _("PeopleCoin"), CClientUIInterface::BTN_OK | CClientUIInterface::ICON_WARNING | CClientUIInterface::MODAL);
+            uiInterface.ThreadSafeMessageBox(msg, _("People"), CClientUIInterface::BTN_OK | CClientUIInterface::ICON_WARNING | CClientUIInterface::MODAL);
         };
 
         if (r == CDBEnv::RECOVER_FAIL)
@@ -910,15 +910,15 @@ bool AppInit2(boost::thread_group& threadGroup)
         {
             std::string msg(_("Warning: error reading wallet.dat! All keys read correctly, but transaction data"
                          " or address book entries might be missing or incorrect."));
-            uiInterface.ThreadSafeMessageBox(msg, _("PeopleCoin"), CClientUIInterface::BTN_OK | CClientUIInterface::ICON_WARNING | CClientUIInterface::MODAL);
+            uiInterface.ThreadSafeMessageBox(msg, _("People"), CClientUIInterface::BTN_OK | CClientUIInterface::ICON_WARNING | CClientUIInterface::MODAL);
         } else
         if (nLoadWalletRet == DB_TOO_NEW)
         {
-            strErrors << _("Error loading wallet.dat: Wallet requires newer version of PeopleCoin") << "\n";
+            strErrors << _("Error loading wallet.dat: Wallet requires newer version of People") << "\n";
         } else
         if (nLoadWalletRet == DB_NEED_REWRITE)
         {
-            strErrors << _("Wallet needed to be rewritten: restart PeopleCoin to complete") << "\n";
+            strErrors << _("Wallet needed to be rewritten: restart People to complete") << "\n";
             LogPrintf("%s", strErrors.str().c_str());
             return InitError(strErrors.str());
         } else

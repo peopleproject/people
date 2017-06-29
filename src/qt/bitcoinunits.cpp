@@ -48,9 +48,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case MEN:  return QString("PeopleCoins");
-    case WOMEN: return QString("Milli-PeopleCoins (1 / 1,000)");
-    case uMEN: return QString("Micro-PeopleCoins (1 / 1,000,000)");
+    case MEN:  return QString("Peoples");
+    case WOMEN: return QString("Milli-Peoples (1 / 1,000)");
+    case uMEN: return QString("Micro-Peoples (1 / 1,000,000)");
     case sMEN: return QString("Peopleshi (1 / 100,000,000)");
     default:   return QString("???");
     }

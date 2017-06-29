@@ -3,27 +3,27 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About PeopleCoin</source>
-        <translation>Info PeopleCoin&apos;i kohta</translation>
+        <source>About People</source>
+        <translation>Info People&apos;i kohta</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;PeopleCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;PeopleCoin&lt;/b&gt;&apos;i versioon</translation>
+        <source>&lt;b&gt;People&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;People&lt;/b&gt;&apos;i versioon</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The BlackCoin developers
-Copyright © 2014-%1 The PeopleCoin developers</source>
+Copyright © 2014-%1 The People developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The BlackCoin developers
-Copyright © 2014-[CLIENT_LAST_COPYRIGHT] The PeopleCoin developers</source>
+Copyright © 2014-[CLIENT_LAST_COPYRIGHT] The People developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -187,7 +187,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-59"/>
-        <source>PeopleCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>People will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -556,7 +556,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid PeopleCoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid People address.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1891,7 +1891,7 @@ Ring size of one is not anonymous, and harms the network.</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>0 active connections to PeopleCoin network</source>
+        <source>0 active connections to People network</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2593,12 +2593,12 @@ Ring size of one is not anonymous, and harms the network.</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;About PeopleCoin</source>
+        <source>&amp;About People</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about PeopleCoin</source>
+        <source>Show information about People</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2618,7 +2618,7 @@ Ring size of one is not anonymous, and harms the network.</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Modify configuration options for PeopleCoin</source>
+        <source>Modify configuration options for People</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2720,7 +2720,7 @@ Ring size of one is not anonymous, and harms the network.</source>
     </message>
     <message numerus="yes">
         <location line="+63"/>
-        <source>%n active connection(s) to PeopleCoin network</source>
+        <source>%n active connection(s) to People network</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
     <message>
@@ -2879,7 +2879,7 @@ Message: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid PeopleCoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid People address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3372,7 +3372,7 @@ Expected time to earn reward is %3</source>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>PeopleCoin version</source>
+        <source>People version</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3557,7 +3557,7 @@ Expected time to earn reward is %3</source>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong PeopleCoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong People will not work properly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3752,7 +3752,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;People Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3878,13 +3878,13 @@ for example: alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  PeopleCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s.  People is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="-98"/>
-        <source>PeopleCoin</source>
-        <translation>PeopleCoin</translation>
+        <source>People</source>
+        <translation>People</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3918,13 +3918,13 @@ for example: alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of PeopleCoin</source>
-        <translation>Viga faili wallet.dat laadimisel: rahakott vajab PeopleCoin&apos;i uuemat versiooni.</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of People</source>
+        <translation>Viga faili wallet.dat laadimisel: rahakott vajab People&apos;i uuemat versiooni.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart PeopleCoin to complete</source>
-        <translation>Rahakott on vaja üle kirjutada: käivita PeopleCoin uuesti toimingu lõpetamiseks</translation>
+        <source>Wallet needed to be rewritten: restart People to complete</source>
+        <translation>Rahakott on vaja üle kirjutada: käivita People uuesti toimingu lõpetamiseks</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3993,7 +3993,7 @@ for example: alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. PeopleCoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. People is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

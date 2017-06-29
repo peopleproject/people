@@ -3,27 +3,27 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About PeopleCoin</source>
-        <translation>Acerca de PeopleCoin</translation>
+        <source>About People</source>
+        <translation>Acerca de People</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;PeopleCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;PeopleCoin&lt;/b&gt; versión</translation>
+        <source>&lt;b&gt;People&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;People&lt;/b&gt; versión</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The BlackCoin developers
-Copyright © 2014-%1 The PeopleCoin developers</source>
+Copyright © 2014-%1 The People developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The BlackCoin developers
-Copyright © 2014-[CLIENT_LAST_COPYRIGHT] The PeopleCoin developers</source>
+Copyright © 2014-[CLIENT_LAST_COPYRIGHT] The People developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -187,8 +187,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-59"/>
-        <source>PeopleCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>PeopleCoin cerrará para terminar el proceso de encriptación. Recuerde que la encriptación de su monedero no puede proteger completamente que sus monedas sean robadas por malware infectando su computadora.</translation>
+        <source>People will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>People cerrará para terminar el proceso de encriptación. Recuerde que la encriptación de su monedero no puede proteger completamente que sus monedas sean robadas por malware infectando su computadora.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -570,8 +570,8 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid PeopleCoin address.</source>
-        <translation>La dirección introducida &quot;%1&quot; no es una dirección válida de PeopleCoin.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid People address.</source>
+        <translation>La dirección introducida &quot;%1&quot; no es una dirección válida de People.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1905,7 +1905,7 @@ Ring size of one is not anonymous, and harms the network.</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>0 active connections to PeopleCoin network</source>
+        <source>0 active connections to People network</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2607,12 +2607,12 @@ Ring size of one is not anonymous, and harms the network.</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;About PeopleCoin</source>
+        <source>&amp;About People</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about PeopleCoin</source>
+        <source>Show information about People</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2632,7 +2632,7 @@ Ring size of one is not anonymous, and harms the network.</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Modify configuration options for PeopleCoin</source>
+        <source>Modify configuration options for People</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2734,7 +2734,7 @@ Ring size of one is not anonymous, and harms the network.</source>
     </message>
     <message numerus="yes">
         <location line="+63"/>
-        <source>%n active connection(s) to PeopleCoin network</source>
+        <source>%n active connection(s) to People network</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
     <message>
@@ -2893,7 +2893,7 @@ Message: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid PeopleCoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid People address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3386,8 +3386,8 @@ Expected time to earn reward is %3</source>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>PeopleCoin version</source>
-        <translation>versión PeopleCoin</translation>
+        <source>People version</source>
+        <translation>versión People</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3577,8 +3577,8 @@ Expected time to earn reward is %3</source>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong PeopleCoin will not work properly.</source>
-        <translation>Advertencia: Verifique que la fecha y hora del equipo sean correctas! Si su reloj es erróneo PeopleCoin no funcionará correctamente.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong People will not work properly.</source>
+        <translation>Advertencia: Verifique que la fecha y hora del equipo sean correctas! Si su reloj es erróneo People no funcionará correctamente.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -3774,7 +3774,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;People Alert&quot; admin@foo.com
 </source>
         <translation>%s, debe establecer un rpcpassword en el fichero de configuración:
 %s
@@ -3785,7 +3785,7 @@ rpcpassword=%s
 El nombre de usuario y contraseña no debe ser el mismo.
 Si no existe el archivo, créelo con permisos de sólo lectura para el dueño.
 También se recomienda establecer alertnotify para ser notificado de los problemas;
-por ejemplo: alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@foo.com
+por ejemplo: alertnotify=echo %%s | mail -s &quot;People Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3917,13 +3917,13 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  PeopleCoin is probably already running.</source>
-        <translation>No se puede obtener un bloqueo en el directorio de datos %s. PeopleCoin probablemente ya esté en funcionamiento.</translation>
+        <source>Cannot obtain a lock on data directory %s.  People is probably already running.</source>
+        <translation>No se puede obtener un bloqueo en el directorio de datos %s. People probablemente ya esté en funcionamiento.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>PeopleCoin</source>
-        <translation>PeopleCoin</translation>
+        <source>People</source>
+        <translation>People</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3957,13 +3957,13 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of PeopleCoin</source>
-        <translation>Error cargando wallet.dat: El monedero requiere una nueva versión de PeopleCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of People</source>
+        <translation>Error cargando wallet.dat: El monedero requiere una nueva versión de People</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart PeopleCoin to complete</source>
-        <translation>El monedero necesita ser reescrito: reinicie PeopleCoin para completar</translation>
+        <source>Wallet needed to be rewritten: restart People to complete</source>
+        <translation>El monedero necesita ser reescrito: reinicie People para completar</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4032,8 +4032,8 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. PeopleCoin is probably already running.</source>
-        <translation>No se puede enlazar a %s en este equipo. PeopleCoin probablemente ya esté en funcionamiento.</translation>
+        <source>Unable to bind to %s on this computer. People is probably already running.</source>
+        <translation>No se puede enlazar a %s en este equipo. People probablemente ya esté en funcionamiento.</translation>
     </message>
     <message>
         <location line="-97"/>

@@ -4623,7 +4623,7 @@ bool CWallet::SendSdcToAnon(CStealthAddress& sxAddress, int64_t nValue, std::str
 
     if (vNodes.empty())
     {
-        sError = _("Error: PeopleCoin is not connected!");
+        sError = _("Error: People is not connected!");
         return false;
     };
 
@@ -4737,7 +4737,7 @@ bool CWallet::SendAnonToAnon(CStealthAddress& sxAddress, int64_t nValue, int nRi
 
     if (vNodes.empty())
     {
-        sError = _("Error: PeopleCoin is not connected!");
+        sError = _("Error: People is not connected!");
         return false;
     };
 
@@ -4839,7 +4839,7 @@ bool CWallet::SendAnonToSdc(CStealthAddress& sxAddress, int64_t nValue, int nRin
 
     if (vNodes.empty())
     {
-        sError = _("Error: PeopleCoin is not connected!");
+        sError = _("Error: People is not connected!");
         return false;
     };
 

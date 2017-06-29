@@ -3,12 +3,12 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About PeopleCoin</source>
-        <translation>Über PeopleCoin</translation>
+        <source>About People</source>
+        <translation>Über People</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;PeopleCoin&lt;/b&gt; version</source>
+        <source>&lt;b&gt;People&lt;/b&gt; version</source>
         <translation>&lt;b&gt;Hpeople&lt;/b&gt; Version</translation>
     </message>
     <message>
@@ -16,14 +16,14 @@
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The BlackCoin developers
-Copyright © 2014-%1 The PeopleCoin developers</source>
+Copyright © 2014-%1 The People developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The BlackCoin developers
-Copyright © 2014-[CLIENT_LAST_COPYRIGHT] The PeopleCoin developers</source>
+Copyright © 2014-[CLIENT_LAST_COPYRIGHT] The People developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -187,8 +187,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-59"/>
-        <source>PeopleCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>PeopleCoin schließt sich jetzt um die Verschlüsselung abzuschließen. Merke: Dass ein verschlüsseltes Wallet nicht absolut vor Diebstahl, durch Computer Malware, geschützt ist.</translation>
+        <source>People will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>People schließt sich jetzt um die Verschlüsselung abzuschließen. Merke: Dass ein verschlüsseltes Wallet nicht absolut vor Diebstahl, durch Computer Malware, geschützt ist.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -570,8 +570,8 @@ Dies bedeutet eine Gebühr von min %2 ist benötigt</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid PeopleCoin address.</source>
-        <translation>Die eingegebene Adresse &quot;%1&quot; ist keine gültige PeopleCoin Adresse.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid People address.</source>
+        <translation>Die eingegebene Adresse &quot;%1&quot; ist keine gültige People Adresse.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1906,7 +1906,7 @@ Ring Größe von eins ist nicht anonym und schädigt das Netzwerk.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>0 active connections to PeopleCoin network</source>
+        <source>0 active connections to People network</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2608,13 +2608,13 @@ Ring Größe von eins ist nicht anonym und schädigt das Netzwerk.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;About PeopleCoin</source>
-        <translation>&amp;Über PeopleCoin</translation>
+        <source>&amp;About People</source>
+        <translation>&amp;Über People</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about PeopleCoin</source>
-        <translation>Zeige Informationen über PeopleCoin</translation>
+        <source>Show information about People</source>
+        <translation>Zeige Informationen über People</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2633,8 +2633,8 @@ Ring Größe von eins ist nicht anonym und schädigt das Netzwerk.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Modify configuration options for PeopleCoin</source>
-        <translation>Ändere Konfigurationsoptionen für PeopleCoin</translation>
+        <source>Modify configuration options for People</source>
+        <translation>Ändere Konfigurationsoptionen für People</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2735,8 +2735,8 @@ Ring Größe von eins ist nicht anonym und schädigt das Netzwerk.</translation>
     </message>
     <message numerus="yes">
         <location line="+63"/>
-        <source>%n active connection(s) to PeopleCoin network</source>
-        <translation><numerusform>%n Aktive Verbindungen zum PeopleCoin Netzwerk</numerusform><numerusform>0 aktive Verbindung(en) zum PeopleCash Netzwerk</numerusform></translation>
+        <source>%n active connection(s) to People network</source>
+        <translation><numerusform>%n Aktive Verbindungen zum People Netzwerk</numerusform><numerusform>0 aktive Verbindung(en) zum PeopleCash Netzwerk</numerusform></translation>
     </message>
     <message>
         <location line="+18"/>
@@ -2902,8 +2902,8 @@ Nachricht: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid PeopleCoin address or malformed URI parameters.</source>
-        <translation>URI kann nicht gefasst werden! Dies kann zbs. durch eine ungültige PeopleCoin Adresse ausgelöst werden.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid People address or malformed URI parameters.</source>
+        <translation>URI kann nicht gefasst werden! Dies kann zbs. durch eine ungültige People Adresse ausgelöst werden.</translation>
     </message>
     <message>
         <location line="+42"/>
@@ -3398,8 +3398,8 @@ Erwartete Zeit zum Stake Erhalt ist %3</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>PeopleCoin version</source>
-        <translation>PeopleCoin Version</translation>
+        <source>People version</source>
+        <translation>People Version</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3583,8 +3583,8 @@ Erwartete Zeit zum Stake Erhalt ist %3</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong PeopleCoin will not work properly.</source>
-        <translation>Wanung : Bitte prüfen Sie ob Datum und Uhrzeit richtig eingestellt sind. Wenn das Datum falsch ist PeopleCoin nicht richtig funktionieren.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong People will not work properly.</source>
+        <translation>Wanung : Bitte prüfen Sie ob Datum und Uhrzeit richtig eingestellt sind. Wenn das Datum falsch ist People nicht richtig funktionieren.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -3778,7 +3778,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;People Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3904,13 +3904,13 @@ for example: alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  PeopleCoin is probably already running.</source>
-        <translation>Kann das Verzeichniss nicht einbinden %s. PeopleCoin Brieftasche läuft wahrscheinlich bereits.</translation>
+        <source>Cannot obtain a lock on data directory %s.  People is probably already running.</source>
+        <translation>Kann das Verzeichniss nicht einbinden %s. People Brieftasche läuft wahrscheinlich bereits.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>PeopleCoin</source>
-        <translation>PeopleCoin</translation>
+        <source>People</source>
+        <translation>People</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3944,13 +3944,13 @@ for example: alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of PeopleCoin</source>
-        <translation>Fehler beim Laden wallet.dat. Brieftasche benötigt neuere Version der PeopleCoin Brieftasche.</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of People</source>
+        <translation>Fehler beim Laden wallet.dat. Brieftasche benötigt neuere Version der People Brieftasche.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart PeopleCoin to complete</source>
-        <translation>Brieftasche muss neu geschrieben werden. Starte die PeopleCoin Brieftasche neu zum komplettieren.</translation>
+        <source>Wallet needed to be rewritten: restart People to complete</source>
+        <translation>Brieftasche muss neu geschrieben werden. Starte die People Brieftasche neu zum komplettieren.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4019,7 +4019,7 @@ for example: alertnotify=echo %%s | mail -s &quot;PeopleCoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. PeopleCoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. People is probably already running.</source>
         <translation>Fehler beim anbinden %s auf diesem Computer. BlaclCoin Client läuft wahrscheinlich bereits.</translation>
     </message>
     <message>

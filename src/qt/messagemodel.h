@@ -63,7 +63,7 @@ struct MessageTableEntry
     }
 };
 
-/** Interface to PeopleCoin Secure Messaging from Qt view code. */
+/** Interface to People Secure Messaging from Qt view code. */
 class MessageModel : public QAbstractTableModel
 {
     Q_OBJECT

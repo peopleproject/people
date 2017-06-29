@@ -1,4 +1,4 @@
-// Copyright (c) 2014 The PeopleCoin developers
+// Copyright (c) 2014 The People developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file license.txt or http://www.opensource.org/licenses/mit-license.php.
 
@@ -275,7 +275,7 @@ int main(int argc, char *argv[])
                 guiref = 0;
             }
             // Shutdown the core and its threads, but don't exit Qt here
-            LogPrintf("PeopleCoin shutdown.\n\n");
+            LogPrintf("People shutdown.\n\n");
             threadGroup.interrupt_all();
             threadGroup.join_all();
             Shutdown();

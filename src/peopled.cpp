@@ -127,7 +127,7 @@ void WaitForShutdown(boost::thread_group* threadGroup)
         fShutdown = ShutdownRequested();
     };
     
-    LogPrintf("PeopleCoin shutdown.\n\n");
+    LogPrintf("People shutdown.\n\n");
     
     if (threadGroup)
     {
@@ -163,7 +163,7 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("-h") || mapArgs.count("-help"))
         {
             // First part of help message is specific to peopled / RPC client
-            std::string strUsage = _("PeopleCoin version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("People version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
                   "  peopled [options]                     " + "\n" +
                   "  peopled [options] <command> [params]  " + _("Send command to -server or peopled") + "\n" +

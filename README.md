@@ -1,19 +1,14 @@
-![PeopleCash Logo](https://i.imgur.com/ovemJA3.png)
-
-[![Slack](https://slack.peopleproject.io/badge.svg)](https://slack.peopleproject.io/)
-[![Gitter](https://badges.gitter.im/peopleproject/people.svg)](https://gitter.im/peopleproject/people?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge) [![Build Status](https://travis-ci.org/peopleproject/people.svg?branch=master)](https://travis-ci.org/peopleproject/people) [![Code Climate](https://codeclimate.com/github/peopleproject/people/badges/gpa.svg)](https://codeclimate.com/github/peopleproject/people) [![Test Coverage](https://codeclimate.com/github/peopleproject/people/badges/coverage.svg)](https://codeclimate.com/github/peopleproject/people/coverage) 
-
 Introduction
 ===========================
 
-The People Project  is a decentralized peer-to-peer platform, created under an open source license, featuring a built-in cryptocurrency, end-to-end encrypted messaging and decentralized marketplace. The decentralized network aims to provide anonymity and privacy for everyone through a simple user-friendly interface by taking care of all the advanced cryptography in the background. 
+The People Project  is a decentralized peer-to-peer platform, created under an open source license, featuring a built-in cryptocurrency, end-to-end encrypted messaging and decentralized marketplace. The decentralized network aims to provide anonymity and privacy for everyone through a simple user-friendly interface by taking care of all the advanced cryptography in the background.
 
 * [Website](https://peopleproject.io/)
 * [Blog](https://blog.peopleproject.io/)
 * [Documentation](https://doc.peopleproject.io/)
 * [Forum](https://talk.peopleproject.io/)
 
-"They who can give up essential liberty to obtain a little temporary safety deserve neither liberty nor safety." 
+"They who can give up essential liberty to obtain a little temporary safety deserve neither liberty nor safety."
 
 Releases
 ===========================
@@ -24,7 +19,7 @@ Supported Operating Systems:
 * ~~Linux (32 bit)~~
 * Windows (32 bit)
 * Windows (64 bit)
-* OSX 
+* OSX
 
 
 Linux releases will not work out of the box on the Raspberry Pi, you'll have to compile from source.
@@ -54,7 +49,7 @@ after the warning if action is not taken by the author. Pull requests closed
 in this manner will have their corresponding issue labeled 'stagnant'.
 
 Issues with no commits will be given a similar warning, and closed after
-15 days from their last activity. Issues closed in this manner will be 
+15 days from their last activity. Issues closed in this manner will be
 labeled 'stale'.
 
 Building People

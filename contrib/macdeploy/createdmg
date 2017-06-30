@@ -9,5 +9,5 @@ install src/qt/res/icons/people.icns dist/.VolumeIcon.icns
 cd dist
 ln -sf /Applications Applications
 cd ..
-genisoimage -no-cache-inodes -l -probe -V "Hpeople" -no-pad -r -apple -o hpeople.tmp.dmg dist
-dmg dmg hpeople.tmp.dmg hpeople.macosx.dmg
+genisoimage -no-cache-inodes -l -probe -V "Hpeople" -no-pad -r -apple -o people.tmp.dmg dist
+dmg dmg people.tmp.dmg people.macosx.dmg

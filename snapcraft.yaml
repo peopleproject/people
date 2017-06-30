@@ -14,7 +14,7 @@ confinement: strict
 
 apps:
   people:
-    command: desktop-launch $SNAP/usr/local/bin/hpeople
+    command: desktop-launch $SNAP/usr/local/bin/people
     plugs: [network, network-bind, unity7]
 
 parts:

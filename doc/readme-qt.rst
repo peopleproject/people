@@ -23,7 +23,7 @@ then execute the following:
 
 Alternatively, install Qt Creator and open the `people.pro` file.
 
-An executable named `hpeople` will be built.
+An executable named `people` will be built.
 
 You can install the binary with:
 

@@ -28,7 +28,7 @@ public:
     void setModel(WalletModel *model);
 
     // static because also called from sendcoinsdialog
-    static void updateLabels(WalletModel*, QDialog*, ShadowBridge *bridge = 0);
+    static void updateLabels(WalletModel*, QDialog*, PeopleBridge *bridge = 0);
     static QString getPriorityLabel(double);
 
     static QList<qint64> payAmounts;

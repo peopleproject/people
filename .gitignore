@@ -18,7 +18,7 @@ src/build.h
 *.qm
 Makefile
 people
-hpeople
+people
 #resources cpp
 qrc_*.cpp
 #qt creator

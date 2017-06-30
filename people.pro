@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = hpeople
+TARGET = people
 VERSION = 1.5.0.4
 INCLUDEPATH += src src/json src/qt
 DEFINES += BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
@@ -387,7 +387,7 @@ CODECFORTR = UTF-8
 
 # for lrelease/lupdate
 # also add new translations to people.qrc under translations/
-TRANSLATIONS = $$files(src/qt/locale/hpeople*.ts)
+TRANSLATIONS = $$files(src/qt/locale/people*.ts)
 
 isEmpty(QMAKE_LRELEASE) {
     win32:QMAKE_LRELEASE = $$[QT_INSTALL_BINS]\\lrelease.exe

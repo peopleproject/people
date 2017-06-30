@@ -53,14 +53,14 @@ script:
 
   - echo 'Package executables' && echo -en 'travis_fold:start:script.package\\r'
 
-  - export BUILD=hpeople_`if [ "$TRAVIS_TAG" != "" ]; then [ "${TRAVIS_TAG:0:1}" == "v" ] && echo ${TRAVIS_TAG:1}_ || echo ${TRAVIS_TAG}_; fi`${BUILD}
+  - export BUILD=people_`if [ "$TRAVIS_TAG" != "" ]; then [ "${TRAVIS_TAG:0:1}" == "v" ] && echo ${TRAVIS_TAG:1}_ || echo ${TRAVIS_TAG}_; fi`${BUILD}
   - export UPLOAD=${BUILD}.zip;
   - if [ -d release ]; then cd release; fi
-  - if [ -f hpeople${OUTPUT_SUFFIX} ]; then install -s hpeople${OUTPUT_SUFFIX} $INDIR/; export UPLOAD=${BUILD}.zip; fi
-  - if [ -d Hpeople.app ]; then contrib/macdeploy/createdmg; mv hpeople.macosx.dmg $INDIR/${BUILD}.dmg; export UPLOAD=${BUILD}.dmg; fi
+  - if [ -f people${OUTPUT_SUFFIX} ]; then install -s people${OUTPUT_SUFFIX} $INDIR/; export UPLOAD=${BUILD}.zip; fi
+  - if [ -d Hpeople.app ]; then contrib/macdeploy/createdmg; mv people.macosx.dmg $INDIR/${BUILD}.dmg; export UPLOAD=${BUILD}.dmg; fi
 
   - cd $INDIR
-  - if [ -f hpeople${OUTPUT_SUFFIX} ]; then zip $INDIR/$UPLOAD hpeople${OUTPUT_SUFFIX} peopled${OUTPUT_SUFFIX}; fi
+  - if [ -f people${OUTPUT_SUFFIX} ]; then zip $INDIR/$UPLOAD people${OUTPUT_SUFFIX} peopled${OUTPUT_SUFFIX}; fi
   - sha256sum $UPLOAD > $INDIR/${UPLOAD}.sha256sum.txt
 
   - echo -en 'travis_fold:end:script.package\\r'

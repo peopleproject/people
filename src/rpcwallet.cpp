@@ -161,7 +161,7 @@ Value getinfo(const Array& params, bool fHelp)
     if (nNodeMode == NT_FULL)
     {
         obj.push_back(Pair("moneysupply",  ValueFromAmount(pindexBest->nMoneySupply)));
-        obj.push_back(Pair("peoplesupply", ValueFromAmount(pindexBest->nAnonSupply)));
+        obj.push_back(Pair("Peopleupply", ValueFromAmount(pindexBest->nAnonSupply)));
     }
 
     obj.push_back(Pair("connections",   (int)vNodes.size()));

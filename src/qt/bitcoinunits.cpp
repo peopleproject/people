@@ -39,7 +39,7 @@ QString BitcoinUnits::name(int unit)
     case MEN: return QString("MEN");
     case WOMEN: return QString("WOMEN");
     case uMEN: return QString::fromUtf8("μMEN");
-    case sMEN: return QString::fromUtf8("Peopleshi");
+    case sMEN: return QString::fromUtf8("Peoplehi");
     default: return QString("???");
     }
 }
@@ -48,10 +48,10 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case MEN:  return QString("Peoples");
-    case WOMEN: return QString("Milli-Peoples (1 / 1,000)");
-    case uMEN: return QString("Micro-Peoples (1 / 1,000,000)");
-    case sMEN: return QString("Peopleshi (1 / 100,000,000)");
+    case MEN:  return QString("People");
+    case WOMEN: return QString("Milli-People (1 / 1,000)");
+    case uMEN: return QString("Micro-People (1 / 1,000,000)");
+    case sMEN: return QString("Peoplehi (1 / 100,000,000)");
     default:   return QString("???");
     }
 }

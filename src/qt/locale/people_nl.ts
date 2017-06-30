@@ -1453,8 +1453,8 @@ Kring grootte van één is niet geheim en tast het netwerk aan.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Peopleshi</source>
-        <translation>Peopleshi</translation>
+        <source>Peoplehi</source>
+        <translation>Peoplehi</translation>
     </message>
     <message>
         <location line="+1"/>

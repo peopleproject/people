@@ -1440,7 +1440,7 @@ Ring size of one is not anonymous, and harms the network.</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Peopleshi</source>
+        <source>Peoplehi</source>
         <translation type="unfinished"/>
     </message>
     <message>

@@ -1453,7 +1453,7 @@ Ring Größe von eins ist nicht anonym und schädigt das Netzwerk.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Peopleshi</source>
+        <source>Peoplehi</source>
         <translation type="unfinished"/>
     </message>
     <message>

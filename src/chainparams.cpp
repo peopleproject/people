@@ -156,7 +156,7 @@ public:
         nLastFairLaunchBlock = 1800000;
 
         nFirstPosv2Block = 2;
-        nFirstPosv3Block = 75000000;// !!!!!
+        nFirstPosv3Block = 75000000;
 
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20); // "standard" scrypt target limit for proof of work, results with 0,000244140625 proof-of-work difficulty
         bnProofOfStakeLimit = CBigNum(~uint256(0) >> 20);
@@ -166,6 +166,11 @@ public:
         genesis.nNonce   = 790669;
 
 	      hashGenesisBlock = genesis.GetHash();
+
+        printf("%s\n", hash.ToString().c_str());
+        printf("%s\n", hashGenesisBlock.ToString().c_str());
+        printf("%s\n", block.hashMerkleRoot.ToString().c_str());
+
 	      assert(hashGenesisBlock == uint256("0xdd80e2271558a19c01f32de5cb01fa8426acb343e5418f88cdf39506f2d9d6c3"));
         assert(genesis.hashMerkleRoot == uint256("0x3f70fa89431b48ab7be3f8458eb9e854d7372d8ef6fcd9ead166b1708a5a15ec"));
 

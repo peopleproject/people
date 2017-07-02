@@ -22,7 +22,7 @@ enum eNodeState
     NS_GET_HEADERS,
     NS_GET_FILTERED_BLOCKS,
     NS_READY,
-    
+
     NS_UNKNOWN // end marker
 };
 
@@ -35,7 +35,7 @@ enum eBlockFlags
 
 
 /*  nServices flags
-    top 32 bits of CNode::nServices are used to mark services required 
+    top 32 bits of CNode::nServices are used to mark services required
 */
 
 enum
@@ -47,7 +47,7 @@ enum
     SMSG_RELAY   = (1 << 4),
 };
 
-const int64_t GENESIS_BLOCK_TIME = 1405769613;
+const int64_t GENESIS_BLOCK_TIME = 1499008800;
 
 static const int64_t COIN = 100000000;
 static const int64_t CENT = 1000000;
@@ -57,7 +57,7 @@ static const int64_t MIN_TX_FEE = 10000;
 static const int64_t MIN_TX_FEE_ANON = 1000000;
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
-static const int64_t COIN_YEAR_REWARD = 2 * CENT; // 2% per year
+static const int64_t COIN_YEAR_REWARD = 2.5 * CENT; // 2% per year
 
 static const int64_t MBLK_RECEIVE_TIMEOUT = 60; // seconds
 
@@ -126,4 +126,3 @@ extern int64_t nTimeLastMblkRecv;
 
 
 #endif /* COIN_STATE_H */
-

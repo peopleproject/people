@@ -177,17 +177,9 @@ public:
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
         genesis.nNonce   = 790669;
         //  start
-        if (true && genesis.GetHash() != hashGenesisBlock){
-           printf("Main: genesis.nTime = %u \n", genesis.nTime);
-           printf("genesis.nNonce = %u \n", genesis.nNonce);
-           printf("genesis.nVersion = %u \n", genesis.nVersion);
-           printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str()); //first this, then comment this line out and uncomment the one under.
-           printf("genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str()); //improvised. worked for me, to find merkle root
-        }
-
         hashGenesisBlock = genesis.GetHash();
-	      assert(hashGenesisBlock == uint256("0x7825c7c9096bcfc8719bf6929b5efd67c634c5dbee7ddcbc59e0ac11d90751b4"));
-        assert(genesis.hashMerkleRoot == uint256("0x62982a0f56a66a6499de417348fcc09a6708efc49290dea74bfa2c01ea28def0"));
+	      assert(hashGenesisBlock == uint256("0x15a392c9b613c31a8bc40d2a37247cb45486830a2ec9912f164355db169d57db"));
+        assert(genesis.hashMerkleRoot == uint256("0xf828f9e088c9d3e1f9403bcaac0d2d848cca6be2dc14a4d7446eeec899b0df6f"));
 
         base58Prefixes[PUBKEY_ADDRESS]      = list_of(63).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[SCRIPT_ADDRESS]      = list_of(125).convert_to_container<std::vector<unsigned char> >();

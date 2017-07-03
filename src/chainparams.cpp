@@ -161,11 +161,11 @@ public:
         nRPCPort = 7701;
         nBIP44ID = 0x80000023;
         //
-        nLastPOWBlock = 18562500; // 37124760 COIN * 2;
-        nLastPOWBlock2 = 37125000; // 1856238000 COIN * 100;
-        nLastPOWBlock3 = 74250000; // 3712476000 COIN * 200;
-        nLastPOWBlock4 = 77888325;  // 1819161240 COIN * 500;
-        nLastFairLaunchBlock = 120; // 75000000 COIN
+        nLastPOWBlock = 18562500;
+        nLastPOWBlock2 = 37125000;
+        nLastPOWBlock3 = 74250000;
+        nLastPOWBlock4 = 77888325;
+        nLastFairLaunchBlock = 120;
 
         nFirstPosv2Block = 80000000;
         nFirstPosv3Block = 105000000;

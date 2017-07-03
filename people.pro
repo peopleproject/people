@@ -79,13 +79,13 @@ build_macosx64 {
 }
 build_win32 {
     BOOST_LIB_SUFFIX=-mgw48-mt-s-1_55
-    BOOST_INCLUDE_PATH=c:/deps/boost/include
-    BOOST_LIB_PATH=c:/deps/boost/lib
+    BOOST_INCLUDE_PATH=c:/deps/boost_1_55_0/include
+    BOOST_LIB_PATH=c:/deps/boost_1_55_0/lib
 
     BDB_INCLUDE_PATH=c:/deps/db-4.8.30.NC/build_unix
     BDB_LIB_PATH=c:/deps/db-4.8.30.NC/build_unix
-    OPENSSL_INCLUDE_PATH=c:/deps/openssl_1.0.1h/include
-    OPENSSL_LIB_PATH=c:/deps/openssl_1.0.1h/lib/
+    OPENSSL_INCLUDE_PATH=c:/deps/openssl_1.0.2k/include
+    OPENSSL_LIB_PATH=c:/deps/openssl_1.0.2k/lib/
 
     MINIUPNPC_INCLUDE_PATH=c:/deps/miniupnpc
     MINIUPNPC_LIB_PATH=c:/deps/miniupnpc

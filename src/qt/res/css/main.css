@@ -2,58 +2,58 @@
 @font-face {
     font-family: "Open Sans";
     font-weight: 300;
-    src: url("qrc:///fonts/OpenSans-Light.ttf");
+    src: url("/fonts/OpenSans-Light.ttf");
 }
 
 @font-face {
     font-family: "Open Sans";
     font-weight: 300;
-    src: url("qrc:///fonts/OpenSans-LightItalic.ttf");
+    src: url("/fonts/OpenSans-LightItalic.ttf");
     font-style: italic
 }
 
 @font-face {
     font-family: "Open Sans";
     font-weight: 400;
-    src: url("qrc:///fonts/OpenSans-Regular.ttf");
+    src: url("/fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
     font-family: "Open Sans";
     font-weight: 400;
-    src: url("qrc:///fonts/OpenSans-Italic.ttf");
+    src: url("/fonts/OpenSans-Italic.ttf");
     font-style: italic
 }
 
 @font-face {
     font-family: "Open Sans";
     font-weight: 700;
-    src: url("qrc:///fonts/OpenSans-Bold.ttf");
+    src: url("/fonts/OpenSans-Bold.ttf");
 }
 
 @font-face {
     font-family: "Open Sans";
     font-weight: 700;
-    src: url("qrc:///fonts/OpenSans-BoldItalic.ttf");
+    src: url("/fonts/OpenSans-BoldItalic.ttf");
     font-style: italic;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic);
 
-@font-face { 
-    font-family: "NotoCJK Japanese"; 
-    font-weight: 400; 
-    src: url("qrc:///fonts/japanese.otf"); 
+@font-face {
+    font-family: "NotoCJK Japanese";
+    font-weight: 400;
+    src: url("/fonts/japanese.otf");
 }
-@font-face { 
-    font-family: "NotoCJK Chinese simplified"; 
-    font-weight: 400; 
-    src: url("qrc:///fonts/chinese_s.otf"); 
+@font-face {
+    font-family: "NotoCJK Chinese simplified";
+    font-weight: 400;
+    src: url("/fonts/chinese_s.otf");
 }
-@font-face { 
-    font-family: "NotoCJK Chinese traditional"; 
-    font-weight: 400; 
-    src: url("qrc:///fonts/chinese_t.otf"); 
+@font-face {
+    font-family: "NotoCJK Chinese traditional";
+    font-weight: 400;
+    src: url("/fonts/chinese_t.otf");
 }
 
 
@@ -275,7 +275,7 @@ article {
 #txnsearch input {
     width: 100%;
     padding: 10px 25px 10px 15px;
-    background: url('qrc:///icons/search') no-repeat 100% 7px;
+    background: url('/icons/search') no-repeat 100% 7px;
     background-color: #ecf0f1;
     border: 1px #e5e5e5 solid;
     text-transform: uppercase;
@@ -346,7 +346,7 @@ article {
     border-width: 1px 0 0 0;
     background: #ecf0f1;
     overflow:auto;
-    box-people:0 -1px 0 0 #dee2e2,
+    box-shadow:0 -1px 0 0 #dee2e2,
                0 -2px 0 0 #f8f8f8;
 }
 
@@ -369,7 +369,7 @@ article {
     background: inherit;
     padding: 10px;
     cursor: pointer;
-    box-people: -1px -1px 0 0 #dee2e2, -1px 1px 0 0 #dee2e2, -2px -2px 0 0 #f8f8f8, -2px 2px 0 0 #f8f8f8;
+    box-shadow: -1px -1px 0 0 #dee2e2, -1px 1px 0 0 #dee2e2, -2px -2px 0 0 #f8f8f8, -2px 2px 0 0 #f8f8f8;
     z-index: 10000;
 }
 
@@ -569,12 +569,12 @@ article {
             background: #131218;
             border-radius: 50px;
             padding: 2px;
-            box-people: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+            box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
     }
 
     progress::-webkit-progress-value {
             border-radius: 50px;
-            box-people: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+            box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
             background:
                     -webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
                     -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
@@ -607,7 +607,7 @@ article {
     padding-left: 18px;
     top: 5px;
     background: #829091;
-    -webkit-mask-image: url('qrc:///icons/nav_icons');
+    -webkit-mask-image: url('/icons/nav_icons');
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position-x: -5px;
 }
@@ -802,13 +802,13 @@ small screens.
     -moz-osx-font-smoothing: grayscale;
 }
 
-.footable.people {
+.footable.shadow {
     border-color: #e5203d;
 }
-.footable.people > tfoot > tr > th,
-.footable.people > thead > tr > th,
-.footable.people > tfoot > tr > td,
-.footable.people > thead > tr > td {
+.footable.shadow > tfoot > tr > th,
+.footable.shadow > thead > tr > th,
+.footable.shadow > tfoot > tr > td,
+.footable.shadow > thead > tr > td {
     background-color: #e5203d;
     border-color: #e5203d;
 }
@@ -1252,8 +1252,8 @@ label.recipient {
 
 .button:active,
 .button.is-active {
-  -webkit-box-people: none;
-  box-people: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   text-decoration: none;
 }
 
@@ -1475,16 +1475,16 @@ label.recipient {
 
 .small-button
 {
-    margin-right:10px; 
-    margin-left:5px; 
-    height:40px; 
-    width:40px; 
+    margin-right:10px;
+    margin-left:5px;
+    height:40px;
+    width:40px;
     margin-bottom:7px;
 }
 
 /****************************
 
-       PeopleChat
+       ShadowChat
 
 *****************************/
 
@@ -1618,18 +1618,18 @@ label.recipient {
 }
 
 #contact-list ul li .contact-options .favorite {
-    background-image: url(qrc:///icons/favorite);
+    background-image: url(/icons/favorite);
     height: 16px;
     width: 16px;
     display: inline-block;
 }
 
 #contact-list ul li .contact-options .favorite.favorited {
-    background-image: url(qrc:///icons/favorited);
+    background-image: url(/icons/favorited);
 }
 
 #contact-list ul li .contact-options .delete, .contact-discussion .delete {
-    background: url(qrc:///icons/delete) no-repeat;
+    background: url(/icons/delete) no-repeat;
     height: 15px;
     width: 15px;
     display: inline-block;
@@ -1734,9 +1734,9 @@ label.recipient {
     padding: 10px;
     border-radius: 5px;
     margin-left: 10px;
-    -webkit-box-people:  1px 1px 5px rgba(0,0,0,.15);
-    -moz-box-people:  1px 1px 5px rgba(0,0,0,.15);
-    box-people: 1px 1px 5px rgba(0,0,0,.15);
+    -webkit-box-shadow:  1px 1px 5px rgba(0,0,0,.15);
+    -moz-box-shadow:  1px 1px 5px rgba(0,0,0,.15);
+    box-shadow: 1px 1px 5px rgba(0,0,0,.15);
     font-size: 15px;
     max-width: 75%;
     overflow-wrap: break-word;
@@ -1872,7 +1872,7 @@ label.recipient {
 
 
 /*********************
-    END PEOPLECHAT
+    END SHADOWCHAT
 *********************/
 
 /* Scrollbar */
@@ -2122,7 +2122,7 @@ Hides the menu at `56.625em`, but modify this based on your app's needs.
     /*#txnsearch {
         width: 100%;
         padding: 10px 25px 10px 15px;
-        background: url('../images/search_icon.png') no-repeat 100% 7px;
+        background: url('/images/search_icon.png') no-repeat 100% 7px;
         background-color: #ecf0f1;
         border: 1px #e5e5e5 solid;
         text-transform: uppercase;
@@ -2197,7 +2197,7 @@ Hides the menu at `56.625em`, but modify this based on your app's needs.
 
 #lean_overlay {
     position: fixed;
-    z-index:100; 
+    z-index:100;
     top: 0px;
     left: 0px;
     height:100%;
@@ -2214,7 +2214,7 @@ Hides the menu at `56.625em`, but modify this based on your app's needs.
     width: 800px;
     background: #fff;
     border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
-    box-people: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-people: 0 0 4px rgba(0,0,0,0.7); -moz-box-people: 0 0px 4px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
     display: none;
 }
 
@@ -2224,7 +2224,7 @@ Hides the menu at `56.625em`, but modify this based on your app's needs.
     width: 800px;
     background: #fff;
     border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
-    box-people: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-people: 0 0 4px rgba(0,0,0,0.7); -moz-box-people: 0 0px 4px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
     display: none;
 }
 
@@ -2234,7 +2234,7 @@ Hides the menu at `56.625em`, but modify this based on your app's needs.
     width: 750px;
     background: #fff;
     border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
-    box-people: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-people: 0 0 4px rgba(0,0,0,0.7); -moz-box-people: 0 0px 4px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
     display: none;
     position: absolute;
 }
@@ -2249,7 +2249,7 @@ Hides the menu at `56.625em`, but modify this based on your app's needs.
 
 #verify-sign-modal textarea
 {
-    width: 698px; 
+    width: 698px;
     height: 100px;
     padding:0 10px;
     margin-bottom:10px;
@@ -2262,7 +2262,7 @@ Hides the menu at `56.625em`, but modify this based on your app's needs.
     width: 800px;
     background: #fff;
     border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
-    box-people: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-people: 0 0 4px rgba(0,0,0,0.7); -moz-box-people: 0 0px 4px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
     display: none;
     position: absolute;
 }
@@ -2288,7 +2288,7 @@ Hides the menu at `56.625em`, but modify this based on your app's needs.
 
 #import-key-modal textarea
 {
-    width: 500px; 
+    width: 500px;
     height: 50px;
     padding:0 10px;
     margin-bottom:10px;
@@ -2300,7 +2300,7 @@ Hides the menu at `56.625em`, but modify this based on your app's needs.
     width: 400px;
     background: #fff;
     border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
-    box-people: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-people: 0 0 4px rgba(0,0,0,0.7); -moz-box-people: 0 0px 4px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
     display: none;
 }
 
@@ -2321,7 +2321,7 @@ Hides the menu at `56.625em`, but modify this based on your app's needs.
     height: 480px;
     background: #fff;
     border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
-    box-people: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-people: 0 0 4px rgba(0,0,0,0.7); -moz-box-people: 0 0px 4px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
     display: none;
     overflow: auto;
 }
@@ -2333,7 +2333,7 @@ Hides the menu at `56.625em`, but modify this based on your app's needs.
     height: 480px;
     background: #fff;
     border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
-    box-people: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-people: 0 0 4px rgba(0,0,0,0.7); -moz-box-people: 0 0px 4px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
     display: none;
     overflow: auto;
 }
@@ -2346,7 +2346,7 @@ Hides the menu at `56.625em`, but modify this based on your app's needs.
     height: 480px;
     background: #fff;
     border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
-    box-people: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-people: 0 0 4px rgba(0,0,0,0.7); -moz-box-people: 0 0px 4px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
     display: none;
     overflow: auto;
 }
@@ -2358,7 +2358,7 @@ Hides the menu at `56.625em`, but modify this based on your app's needs.
     height: 320px;
     background: #fff;
     border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
-    box-people: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-people: 0 0 4px rgba(0,0,0,0.7); -moz-box-people: 0 0px 4px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
     display: none;
     overflow: auto;
 }
@@ -2373,7 +2373,7 @@ Hides the menu at `56.625em`, but modify this based on your app's needs.
     width: 630px;
     background: #fff;
     border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
-    box-people: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-people: 0 0 4px rgba(0,0,0,0.7); -moz-box-people: 0 0px 4px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
     display: none;
 }
 
@@ -2398,7 +2398,7 @@ Hides the menu at `56.625em`, but modify this based on your app's needs.
     font-size:0.8em;
     color: #F51E3E;
     background: #ecf0f1;
-    box-people: -1px -1px 0 0 #dee2e2, -1px 1px 0 0 #dee2e2, -2px -2px 0 0 #f8f8f8, -2px 2px 0 0 #f8f8f8;
+    box-shadow: -1px -1px 0 0 #dee2e2, -1px 1px 0 0 #dee2e2, -2px -2px 0 0 #f8f8f8, -2px 2px 0 0 #f8f8f8;
 }
 
 .network-alerts-icon {
@@ -2545,14 +2545,14 @@ input[type=checkbox]:checked + label:before {
     font-weight: 700;
     color:#999;
     text-transform: uppercase;
-    text-decoration: none;  
-    cursor: pointer;  
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .optionblock {
     width: 150px;
     height: 350px;
-    float: left;   
+    float: left;
     text-align: center;
     margin: 50px;
     cursor: pointer;
@@ -2620,8 +2620,8 @@ input[type=checkbox]:checked + label:before {
     background-color: green;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    border-radius: 20px;   
-    left: 50%;  
+    border-radius: 20px;
+    left: 50%;
 }
 
 .red-circle {
@@ -2630,7 +2630,7 @@ input[type=checkbox]:checked + label:before {
     background-color: #F51E3E;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    border-radius: 20px;   
+    border-radius: 20px;
     text-align: center;
 
 }
@@ -2643,4 +2643,8 @@ input[type=checkbox]:checked + label:before {
 }
 .fa.blue {
     color: rgb(86, 86, 165);
+}
+
+.page-sidebar {
+  background-color: #fff;
 }

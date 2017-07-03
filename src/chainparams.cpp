@@ -27,10 +27,19 @@ int64_t CChainParams::GetProofOfWorkReward(int nHeight, int64_t nFees) const
         nSubsidy = 750000000 * COIN;
     else
     if (nHeight <= nLastFairLaunchBlock)
-        nSubsidy = 100 * COIN;
+        nSubsidy = 0 * COIN;
     else
     if (nHeight <= nLastPOWBlock)
-        nSubsidy = (NetworkID() == CChainParams::TESTNET ? 10000 : 400) * COIN;
+        nSubsidy = 2 * COIN;
+    else
+    if (nHeight <= nLastPOWBlock2)
+        nSubsidy = 100 * COIN;
+    else
+    if (nHeight <= nLastPOWBlock3)
+        nSubsidy = 200 * COIN;
+    else
+    if (nHeight <= nLastPOWBlock4)
+        nSubsidy = 500 * COIN;
 
     if (fDebug && GetBoolArg("-printcreation"))
         LogPrintf("GetProofOfWorkReward() : create=%s nSubsidy=%d\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
@@ -152,8 +161,11 @@ public:
         nRPCPort = 7701;
         nBIP44ID = 0x80000023;
         //
-        nLastPOWBlock = 74250000;
-        nLastFairLaunchBlock = 5;
+        nLastPOWBlock = 18562500; // 37124760 COIN * 2;
+        nLastPOWBlock2 = 37125000; // 1856238000 COIN * 100;
+        nLastPOWBlock3 = 74250000; // 3712476000 COIN * 200;
+        nLastPOWBlock4 = 77888325;  // 1819161240 COIN * 500;
+        nLastFairLaunchBlock = 120; // 75000000 COIN
 
         nFirstPosv2Block = 80000000;
         nFirstPosv3Block = 105000000;
@@ -173,12 +185,12 @@ public:
         base58Prefixes[SCRIPT_ADDRESS]      = list_of(125).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[SECRET_KEY]          = list_of(191).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[STEALTH_ADDRESS]     = list_of(40).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_PUBLIC_KEY]      = list_of(0xEE)(0x80)(0x28)(0x6A).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_SECRET_KEY]      = list_of(0xEE)(0x80)(0x31)(0xE8).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_PUBLIC_KEY]      = list_of(0x4D)(0x45)(0x28)(0x6A).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_SECRET_KEY]      = list_of(0x4D)(0x45)(0x31)(0xE8).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_KEY_HASH]        = list_of(137).convert_to_container<std::vector<unsigned char> >();         // x
         base58Prefixes[EXT_ACC_HASH]        = list_of(83).convert_to_container<std::vector<unsigned char> >();          // a
-        base58Prefixes[EXT_PUBLIC_KEY_BTC]  = list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >(); // xprv
-        base58Prefixes[EXT_SECRET_KEY_BTC]  = list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >(); // xpub
+        base58Prefixes[EXT_PUBLIC_KEY_BTC]  = list_of(0x4E)(0x45)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >(); // xprv
+        base58Prefixes[EXT_SECRET_KEY_BTC]  = list_of(0x4E)(0x45)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >(); // xpub
 
         //convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
         convertSeeds(vFixedSeeds, pnSeed, ARRAYLEN(pnSeed), nDefaultPort);
@@ -212,10 +224,13 @@ public:
         nRPCPort = 17701;
         nBIP44ID = 0x80000001;
 
-        nLastPOWBlock = 110;
-        nLastFairLaunchBlock = 10;
+        nLastPOWBlock = 10; // 37124760 COIN * 2;
+        nLastPOWBlock2 = 100; // 1856238000 COIN * 100;
+        nLastPOWBlock3 = 8000; // 3712476000 COIN * 200;
+        nLastPOWBlock4 = 90000;  // 1819161240 COIN * 500;
+        nLastFairLaunchBlock = 120; // 75000000 COIN
 
-        nFirstPosv2Block = 110;
+        nFirstPosv2Block = 100;
         nFirstPosv3Block = 500;
 
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);

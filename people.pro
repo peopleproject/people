@@ -54,7 +54,7 @@ android {
     QT += widgets webkitwidgets
 }
 
-build_macosx64 {
+macosx64 {
     QMAKE_TARGET_BUNDLE_PREFIX = co.people
     BOOST_LIB_SUFFIX=-mt
     BOOST_INCLUDE_PATH=/usr/local/Cellar/boost/1.61.0_1/include
@@ -77,15 +77,15 @@ build_macosx64 {
     USE_UPNP=1
 
 }
-build_win32 {
-    BOOST_LIB_SUFFIX=-mgw48-mt-s-1_55
-    BOOST_INCLUDE_PATH=c:/deps/boost_1_55_0/include
-    BOOST_LIB_PATH=c:/deps/boost_1_55_0/lib
+win32 {
+    BOOST_LIB_SUFFIX=-mgw48-mt-1_55
+    BOOST_INCLUDE_PATH=c:/deps/boost_1_55_0
+    BOOST_LIB_PATH=c:/deps/boost_1_55_0/stage/lib
 
     BDB_INCLUDE_PATH=c:/deps/db-4.8.30.NC/build_unix
     BDB_LIB_PATH=c:/deps/db-4.8.30.NC/build_unix
-    OPENSSL_INCLUDE_PATH=c:/deps/openssl_1.0.2k/include
-    OPENSSL_LIB_PATH=c:/deps/openssl_1.0.2k/lib/
+    OPENSSL_INCLUDE_PATH=c:/deps/openssl-1.0.2k/include
+    OPENSSL_LIB_PATH=c:/deps/openssl-1.0.2k/lib/
 
     MINIUPNPC_INCLUDE_PATH=c:/deps/miniupnpc
     MINIUPNPC_LIB_PATH=c:/deps/miniupnpc
@@ -158,7 +158,7 @@ win32 {
         QMAKE_RANLIB = $$replace(QMAKE_STRIP, strip, ranlib)
     }
     LIBS += -lshlwapi
-    genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libleveldb.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libmemenv.a
+    #genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX TARGET_OS=OS_WINDOWS_CROSSCOMPILE $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libleveldb.a && $$QMAKE_RANLIB $$PWD/src/leveldb/libmemenv.a
 } else:macx {
     # we use QMAKE_CXXFLAGS_RELEASE even without RELEASE=1 because we use RELEASE to indicate linking preferences not -O preferences
     genleveldb.commands = cd $$PWD/src/leveldb && CC=$$QMAKE_CC CXX=$$QMAKE_CXX AR=$${QMAKE_HOST}-ar TARGET_OS=Darwin $(MAKE) OPT=\"$$QMAKE_CXXFLAGS $$QMAKE_CXXFLAGS_RELEASE\" libleveldb.a libmemenv.a

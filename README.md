@@ -3,9 +3,6 @@ Releases
 Supported Operating Systems:
 * Linux (64 bit)
 * ~~Linux (32 bit)~~
-* Windows (32 bit)
-* Windows (64 bit)
-* OSX
 
 Building People
 ===========================

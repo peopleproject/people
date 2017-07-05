@@ -1,7 +1,5 @@
 Releases
 ===========================
-[Click on this link to go to the latest release - 1.5.0.3](https://github.com/peopleproject/people/releases/latest)
-
 Supported Operating Systems:
 * Linux (64 bit)
 * ~~Linux (32 bit)~~

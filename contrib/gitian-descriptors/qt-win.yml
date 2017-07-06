@@ -4,7 +4,7 @@ suites:
 - "trusty"
 architectures:
 - "amd64"
-packages: 
+packages:
 - "mingw-w64"
 - "g++-mingw-w64"
 - "faketime"
@@ -28,8 +28,8 @@ files:
 script: |
   # Integrity Check
   echo "7ea2a16ecb8088e67db86b0835b887d5316121aeef9565d5d19be3d539a2c2af  qt-everywhere-opensource-src-5.5.0.tar.xz" | sha256sum -c
-  echo "306264166531eecbb35ec645c425b1b5538e8ce3035d7bf599db0b2cc76c730f  people-deps-win32-gitian.tar.xz"           | sha256sum -c 
-  echo "1c7c36ca02624fc2e0f026a84853217e84a9f27f8542a5b18d13164ea48edea7  people-deps-win64-gitian.tar.xz"           | sha256sum -c 
+  echo "0caa5aa6ebbb57d7f826f72449ab0d7ae653a02dab6a8cfd7d2ebb8ffecd4b28  people-deps-win32-gitian.tar.xz"           | sha256sum -c
+  echo "a94a86d7defb4770812f949afb5f5dc4df3795bf68e7182775a4d9c3a49a31aa  people-deps-win64-gitian.tar.xz"           | sha256sum -c
   echo "80f7c7188d7611e47e47d2a70c8ef65026c1cf71ddeb4ace9b1be5b8a76ffbd2  flex-2.5.38.tar.gz"                        | sha256sum -c
   # Defines
   export TZ=UTC
@@ -47,7 +47,7 @@ script: |
   export OLDPATH="$PATH"
   export OLDINCLUDE="$INCLUDE"
   export OLDLIB="$LIB"
-  
+
   for BITS in 32 64; do # for architectures
     #
     INSTALLPREFIX=$HOME/staging${BITS}
@@ -63,7 +63,7 @@ script: |
     export INCLUDE="$DEPSDIR/include:$OLDINCLUDE"
     export LIB="$DEPSDIR/lib:$OLDLIB"
     export PATH="$DEPSDIR/bin:$PATH"
-    
+
     #
     mkdir -p $INSTALLPREFIX $INSTALLPREFIX/host/bin $DEPSDIR $BUILDDIR
     #
@@ -95,7 +95,7 @@ script: |
     #
     cd qt-everywhere-opensource-src-5.5.0
     QTDIR=$BUILDDIR/qt-everywhere-opensource-src-5.5.0
-    
+
     sed -i 's,\.exe,,' "$QTDIR/qtwebkit/Tools/qmake/mkspecs/features/functions.prf"
     sed -i 's,\win_flex,flex,' "$QTDIR/qtwebkit/Tools/qmake/mkspecs/features/default_pre.prf"
     #

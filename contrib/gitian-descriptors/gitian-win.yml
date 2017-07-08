@@ -65,7 +65,7 @@ script: |
     #mkdir qt
     #cd qt
     #8cf1666f744f4a1c78b1025e2d189d38f3328153663b64fc05442bd4a028dc52  qt-win32-5.5.0-gitian-r3.zip
-    #adfc199f2077db06329fd2dd39e1150d1897fd744b2fbeaa66c709fe282d133a  qt-win64-5.5.0-gitian-r3.zip
+    #adfc199f2077db06329fd2dd39e1150d1897fd744b2fbeaa66c709fe282d133  qt-win64-5.5.0-gitian-r3.zip
 
     tar xf $INDIR/qt-win${BITS}-5.5.0-gitian.tar.xz
     cd $DEPSDIR

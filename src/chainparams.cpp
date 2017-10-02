@@ -129,7 +129,7 @@ public:
         genesis.nVersion = 1;
         genesis.nTime    = GENESIS_BLOCK_TIME;
 
-        vSeeds.push_back(CDNSSeedData("dns.people.pw",  "seed.people.pw"));
+        vSeeds.push_back(CDNSSeedData("peoplecoin.pw",  "seed.peoplecoin.pw"));
     }
     virtual const CBlock& GenesisBlock() const { return genesis; }
     virtual const std::vector<CAddress>& FixedSeeds() const {

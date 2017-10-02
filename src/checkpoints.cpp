@@ -29,6 +29,10 @@ namespace Checkpoints
         (    0,      uint256("0x15a392c9b613c31a8bc40d2a37247cb45486830a2ec9912f164355db169d57db") ) // Params().HashGenesisBlock())
         ( 2000,      uint256("0x000000135136b5e0cfec28bf7ea8925a5b0d1660c7fe94e99d5e1cda38da42b6") )
         ( 4000,      uint256("0x000001cc9a50090f5aca7ead6a5918b2fa625d27d50fbcc685f82db714ec31df") )
+        ( 8000,      uint256("0x00000000058a7f95ef44696c2d3bb52c85a43ef94be1640f5a4195e74b83e16a") )
+        (16000,      uint256("0x0000001a134f15c4233248bf5d3f8c2d3929653f1f7dcf07423f3604b4346b02") )
+        (32000,      uint256("0x0000004fda918e7ab693ab9413ae1392220ff12de3017d379b53fb42c42c449e") )
+        (64000,      uint256("0x0000001077f25ffaf36dd5052c00561a7e38eaf3653a195176586695e03c8c88") )
     ;
 
     // TestNet has no checkpoints

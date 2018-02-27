@@ -21,8 +21,8 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 
 # for boost 1.37, add -mt to the boost libraries
 # use: qmake BOOST_LIB_SUFFIX=-mt
-# for boost thread windows with _windows sufix
-# use: BOOST_THREAD_LIB_SUFFIX=_windows-...
+# for boost thread win32 with _win32 sufix
+# use: BOOST_THREAD_LIB_SUFFIX=_win32-...
 # or when linking against a specific BerkelyDB version: BDB_LIB_SUFFIX=-4.8
 
 # Dependency library locations can be customized with:
@@ -77,7 +77,7 @@ build_macosx64 {
     USE_UPNP=1
 
 }
-build_windows {
+build_win32 {
     BOOST_LIB_SUFFIX=-mgw48-mt-s-1_55
     BOOST_INCLUDE_PATH=c:/deps/boost/include
     BOOST_LIB_PATH=c:/deps/boost/lib
@@ -112,8 +112,8 @@ QMAKE_LFLAGS *= -fstack-protector-all --param ssp-buffer-size=1
 # We need to exclude this for Windows cross compile with MinGW 4.2.x, as it will result in a non-working executable!
 # This can be enabled for Windows, when we switch to MinGW >= 4.4.x.
 # for extra security on Windows: enable ASLR and DEP via GCC linker flags
-windows:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat -static
-windows:QMAKE_LFLAGS *= -static-libgcc -static-libstdc++
+win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat -static
+win32:QMAKE_LFLAGS *= -static-libgcc -static-libstdc++
 
 # use: qmake "USE_UPNP=1" ( enabled by default; default)
 #  or: qmake "USE_UPNP=0" (disabled by default)
@@ -129,7 +129,7 @@ contains(USE_UPNP, -) {
     DEFINES += USE_UPNP=$$USE_UPNP MINIUPNP_STATICLIB STATICLIB
     INCLUDEPATH += $$MINIUPNPC_INCLUDE_PATH
     LIBS += $$join(MINIUPNPC_LIB_PATH,,-L,) -lminiupnpc
-    windows:LIBS += -liphlpapi
+    win32:LIBS += -liphlpapi
 }
 
 # use: qmake "USE_DBUS=1" or qmake "USE_DBUS=0"
@@ -152,7 +152,7 @@ LIBS += $$PWD/src/leveldb/libleveldb.a $$PWD/src/leveldb/libmemenv.a
 SOURCES += src/txdb-leveldb.cpp \
     src/qt/addresstablemodel.cpp
 
-windows {
+win32 {
     # make an educated guess about what the ranlib command is called
     isEmpty(QMAKE_RANLIB) {
         QMAKE_RANLIB = $$replace(QMAKE_STRIP, strip, ranlib)
@@ -390,7 +390,7 @@ CODECFORTR = UTF-8
 TRANSLATIONS = $$files(src/qt/locale/people*.ts)
 
 isEmpty(QMAKE_LRELEASE) {
-    windows:QMAKE_LRELEASE = $$[QT_INSTALL_BINS]\\lrelease.exe
+    win32:QMAKE_LRELEASE = $$[QT_INSTALL_BINS]\\lrelease.exe
     else:QMAKE_LRELEASE = $$[QT_INSTALL_BINS]/lrelease
 }
 isEmpty(QM_DIR):QM_DIR = $$PWD/src/qt/locale
@@ -436,11 +436,11 @@ isEmpty(BOOST_INCLUDE_PATH) {
     macx:BOOST_INCLUDE_PATH = /opt/local/include
 }
 
-windows:DEFINES += windows
+windows:DEFINES += WIN32
 windows:RC_FILE = src/qt/res/bitcoin-qt.rc
 
 windows:!contains(MINGW_THREAD_BUGFIX, 0) {
-    # At least qmake's windows-g++-cross profile is missing the -lmingwthrd
+    # At least qmake's win32-g++-cross profile is missing the -lmingwthrd
     # thread-safety flag. GCC has -mthreads to enable this, but it doesn't
     # work with static linking. -lmingwthrd must come BEFORE -lmingw, so
     # it is prepended to QMAKE_LIBS_QT_ENTRY.

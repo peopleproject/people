@@ -32,7 +32,7 @@ script: |
   INDIR=$HOME/build
   OPTFLAGS='-O2'
   TEMPDIR="$HOME/tempdir"
-
+  
   NEEDDIST=1
   # Qt: workaround for determinism in resource ordering
   #  Qt5's rcc uses a QHash to store the files for the resource.
@@ -64,8 +64,8 @@ script: |
     cd $STAGING
     #mkdir qt
     #cd qt
-    #8cf1666f744f4a1c78b1025e2d189d38f3328153663b64fc05442bd4a028dc52  qt-win32-5.5.0-gitian-r3.zip
-    #adfc199f2077db06329fd2dd39e1150d1897fd744b2fbeaa66c709fe282d133  qt-win64-5.5.0-gitian-r3.zip
+    #5edf8d14e47eb6438d3b5a20ed577343a07512eb220e6f83cbb3fbd33112a776  qt-win32-5.5.0-gitian-r3.zip
+    #75a3b425f08969983b2faf0af83b01fd753f99a15ced0b6f998d4db0a1c077f3  qt-win64-5.5.0-gitian-r3.zip
 
     tar xf $INDIR/qt-win${BITS}-5.5.0-gitian.tar.xz
     cd $DEPSDIR
@@ -80,7 +80,7 @@ script: |
     cp $OUTDIR/src/COPYING $OUTDIR/COPYING.txt
     #
     cd src
-    make -f makefile.linux-mingw HOST="$HOST" DEPSDIR="$DEPSDIR" CURDIR="$BUILDDIR/people/src" STATIC=1 $MAKEOPTS USE_UPNP=1 BOOST_LIB_SUFFIX="-mt-s" DEBUGFLAGS=
+    make -f makefile.linux-mingw HOST="$HOST" DEPSDIR="$DEPSDIR" CURDIR="$BUILDDIR/people/src" STATIC=1 $MAKEOPTS USE_UPNP=1 BOOST_LIB_SUFFIX="-mt-s" DEBUGFLAGS= 
     cp peopled.exe $BINDIR/
     cd ..
     #
